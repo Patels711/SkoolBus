@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "SkoolBus",
+    "slug": "SkoolBus",
+    "sdkVersion": "54.0.0",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo192.png",
+    "platforms": ["ios", "android", "web"],
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/favicon.ico",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+  "devDependencies": {
+    "@react-native-community/cli": "latest"
+  },
+      "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to track the bus in real-time",
+        "bundleIdentifier": "com.skoolbus.app"
+
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.ico",
+      "manifest": {
+      "short_name": "SkoolBus",
+      "name": "SkoolBus Tracker",
+      "icons": [
+       {
+          "src": "./assets/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "./assets/icon-512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+    ],
+    "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBSk3HJDw_mMk6jyQLrn06ZuUo0ggXPi7s"}},
+    "theme_color": "#145C9E",
+    "background_color": "#ffffff",
+    "display": "standalone"
+  }
+}
+
+    }
+  }
+}
