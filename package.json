@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm:server\" \"npm:app-ios\"",
-    "server": "cd skoolbus-server && node server.js",
+    "server": "node skoolbus-server/server.js",
     "app": "expo start",
     "app-ios": "expo start --ios",
     "android": "expo start --android",
@@ -41,7 +41,8 @@
     "react-native-screens": "~4.16.0",
     "react-native-web": "^0.21.0",
     "react-native-web-maps": "^0.3.0",
-    "react-native-webview": "13.15.0"
+    "react-native-webview": "13.15.0",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "concurrently": "^9.2.1"
